@@ -1,0 +1,27 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+  max-width: 600px;
+}
+.search-input{
+  border: 1px solid #93288f;
+  border-radius: 6px;
+  font-size: 18px;
+	font-weight: 100;
+}
+.search-btn{
+  background: white;
+  height: 50px;
+  width: 100px;
+  border: 1px solid #93288f;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 18px;
+  font-weight: 100;
+  transition: all 150ms ease-in-out;
+}
+.search-btn:hover{
+  background: #93288f;
+	color: #ffffff;
+}

@@ -4,11 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Weather APP</title>
 </head>
 <body>
-  <h1>Hello</h1>
+  <div class="container my-5 mx-auto">
+    <form id="weather-search">
+      <div class="row">
+        <div class="col-md-9">
+          <input type="text" class="form-control py-4 search-input" id="search"
+            placeholder="Enter location for weather information" autofocus="on">
+        </div>
+        <div class="col-md-3">
+          <input type="submit" value="search" class="search-btn">
+        </div>
+
+      </div>
+      
+      
+
+    </form>
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

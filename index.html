@@ -9,7 +9,7 @@
   <title>Weather APP</title>
 </head>
 <body>
-  <div class="container my-5 mx-auto">
+  <div class="container shadow-lg p-3 mb-5 bg-white rounded my-5 mx-auto">
     <form id="weather-search">
       <div class="row">
         <div class="col-md-9">
@@ -19,12 +19,27 @@
         <div class="col-md-3">
           <input type="submit" value="search" class="search-btn">
         </div>
-
-      </div>
-      
-      
-
+      </div>     
     </form>
+    <!-- End of Form -->
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li id="city">Manchester</li>
+          <li id="current-date">Friday 00:40 </li>
+          <span id="temperature">19</span><span class="units">
+            <a href="#" id="celsius">°C</a> |
+            <a href="#" id="fahrenheit">°F</a>
+          </span>
+          <li id="condition">Sunny</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="images/sunny.png" alt="sun">
+      </div>
+    </div>
+   
+    
 
   </div>
   <script src="script.js"></script>

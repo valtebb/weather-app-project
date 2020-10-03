@@ -1,6 +1,24 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+ul{
+  margin-top: 20px;
+  margin-right: 50px;
+}
+li, span{
+  color: #93288f;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 100;
+  
+}
+img{
+  height: 100px;
+  width: 110px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 150px;
+}
 .container{
   max-width: 600px;
 }
@@ -8,7 +26,9 @@ body {
   border: 1px solid #93288f;
   border-radius: 6px;
   font-size: 18px;
-	font-weight: 100;
+  font-weight: 100;
+  width: 400px;
+  margin-left: 20px;
 }
 .search-btn{
   background: white;

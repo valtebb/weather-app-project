@@ -12,7 +12,21 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-
-
-
 currentDate.innerHTML = `${day} ${hours}:${minutes}`;
+
+// getting API data
+
+function showCurrentTemperature(response){
+  console.log(response.data);
+  let currentTemp = document.querySelector('#current-temperature');
+  currentTemp.innerHTML = Math.round(response.data.main.temp);
+  let currentCity = document.querySelector('#current-city');
+  currentCity.innerHTML = response.data.name;
+  let currentCondition = document.querySelector('#condition');
+  currentCondition.innerHTML = response.data.weather[0].description;
+}
+
+let apiKey = '297d2ceaacf10d700959a7f0a28e4920';
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`
+
+axios.get(apiUrl).then(showCurrentTemperature);

@@ -8,14 +8,14 @@ body {
 }
 ul{
   margin-top: 20px;
-  /* margin-right: 50px; */
+  
   
 }
 li, span{
-  color: #93288f;
+  color: #4f8a8b;
   list-style: none;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   
 }
 img{
@@ -25,6 +25,10 @@ img{
 }
 form{
   margin-bottom: 20px;
+}
+#condition{
+  margin-top: 10px;
+  text-transform: capitalize;
 }
 .location {
   padding-left: 90px;
@@ -40,10 +44,11 @@ form{
   max-width: 600px;
 }
 .search-input{
-  border: 1px solid #93288f;
+  /* border: 1px solid #93288f; */
+  border: 1px solid #4f8a8b;;
   border-radius: 6px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   width: 400px;
   margin-left: 20px;
 }
@@ -51,23 +56,22 @@ form{
   background: white;
   height: 50px;
   width: 100px;
-  border: 1px solid #93288f;
+ border: 1px solid #4f8a8b;
   border-radius: 6px;
   padding: 6px 14px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   transition: all 150ms ease-in-out;
 }
 .search-btn:hover{
-  background: #93288f;
+  background: #4f8a8b;
 	color: #ffffff;
 }
 .days, .weather-view, .temperature {
-  color: #93288f;
+  color: #4f8a8b;
   font-size: 20px;
-  font-weight: 100;
-  
-  /* padding-left: 20px; */
+  font-weight: 300;
+ 
 }
 .col {
   padding-left: 60px;

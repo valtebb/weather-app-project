@@ -26,7 +26,20 @@ function showCurrentTemperature(response){
   currentCondition.innerHTML = response.data.weather[0].description;
 }
 
-let apiKey = '297d2ceaacf10d700959a7f0a28e4920';
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`
+function search(city){
+  let apiKey = '297d2ceaacf10d700959a7f0a28e4920';
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
-axios.get(apiUrl).then(showCurrentTemperature);
+  axios.get(apiUrl).then(showCurrentTemperature);
+}
+
+
+
+function searchLocation(event){
+  event.preventDefault();
+  let serchCityinput = document.querySelector('#search');
+  search(serchCityinput.value);
+}
+
+let form = document.querySelector('#weather-search');
+form.addEventListener('submit', searchLocation);

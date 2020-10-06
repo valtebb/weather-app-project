@@ -17,14 +17,17 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 // getting API data
 
 function showCurrentTemperature(response){
-  console.log(response.data);
+  // console.log(response.data);
   let currentTemp = document.querySelector('#current-temperature');
   currentTemp.innerHTML = Math.round(response.data.main.temp);
   let currentCity = document.querySelector('#current-city');
   currentCity.innerHTML = response.data.name;
   let currentCondition = document.querySelector('#condition');
   currentCondition.innerHTML = response.data.weather[0].description;
-}
+  let icon = document.querySelector('#icon');
+  icon.setAttribute("src", `img/${response.data.weather[0].icon}.png`)
+  // icon.setAttribute( 'src',`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+};
 
 function search(city){
   let apiKey = '297d2ceaacf10d700959a7f0a28e4920';

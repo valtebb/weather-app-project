@@ -10,7 +10,8 @@
   <title>Weather APP</title>
 </head>
 <body>
-  <div class="container shadow-lg p-3 mb-5 bg-white rounded my-5 mx-auto">
+  <div class="container shadow-lg p-3 mb-5 bg-white rounded my-5 mx-auto" id="bg-image">
+    <!-- <img src="" alt="" id="bg-image"> -->
     <form id="weather-search">
       <div class="row">
         <div class="col-md-9">
@@ -24,11 +25,11 @@
     </form>
     <!-- End of Form -->
     <div class="row">
-      <div class="col-md-6 icon" id="icon">
-        <img src="" alt=""> 
+      <div class="col-md-6 icon">
+        <img id="icon" src="" alt=""> 
       </div>
       <div class="col-md-6 location">
-        <ul>
+     
           <li id="current-city">Manchester</li>
           <li id="current-date">Friday 00:40 </li>
           <span id="current-temperature"></span><span class="units">
@@ -36,8 +37,7 @@
             <a href="#" id="fahrenheit">°F</a>
           </span>
           <li id="condition">Sunny</li>
-        </ul>
-      </div>
+        
      
     </div>
       <!-- <div class="row days">
@@ -66,8 +66,58 @@
         <div class="col col-1">22°</div>
         <div class="col col-1">22°</div>
         <div class="col col-1">20°</div>
+      </div> -->
+    <div class="row weather-forcast" id="weather-forcast">
+      <div col-2 class="forcast">
+        <h3>Mon</h3>
+        <img src="img/01d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
       </div>
-     -->
+      <div col-2 class="forcast">
+        <h3>Tue</h3>
+        <img src="img/01d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+      <div col-2 class="forcast">
+        <h3>Wed</h3>
+        <img src="img/03d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+      <div col-2 class="forcast">
+        <h3>Thur</h3>
+        <img src="img/03d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+      <div col-2 class="forcast">
+        <h3>Fri</h3>
+        <img src="img/01d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+      <div col-2 class="forcast">
+        <h3>Sat</h3>
+        <img src="img/09d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+      <div col-2 class="forcast">
+        <h3>Sun</h3>
+        <img src="img/09d.png" alt="sunny" class="icons">
+        <div class="forcast-temp">
+          <h3>20°</h3>
+        </div>
+      </div>
+    </div>
 
   </div>
   <script src="script.js"></script>

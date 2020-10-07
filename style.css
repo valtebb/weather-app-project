@@ -23,6 +23,14 @@ img{
   width: 110px;
   margin-top: 20px;
 }
+h3{
+   color: #4f8a8b;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 40px;
+  text-align: center;
+
+}
 form{
   margin-bottom: 20px;
 }
@@ -30,8 +38,10 @@ form{
   margin-top: 10px;
   text-transform: capitalize;
 }
+
 .location {
   padding-left: 90px;
+  margin-top: 15px;
 }
 .icons {
   height: 50px;
@@ -40,11 +50,16 @@ form{
 .icon {
   padding-left: 100px;
 }
+
 .container{
+  /* background: url(../img/day.svg);
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  */
   max-width: 600px;
 }
 .search-input{
-  /* border: 1px solid #93288f; */
   border: 1px solid #4f8a8b;;
   border-radius: 6px;
   font-size: 18px;
@@ -67,16 +82,26 @@ form{
   background: #4f8a8b;
 	color: #ffffff;
 }
-.days, .weather-view, .temperature {
+.weather-forcast {
+  padding-left: 70px;
+}
+.forcast-temp{
+  color: #4f8a8b;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.forcast {
+  padding: 10px;
+}
+/* .days, .weather-view, .temperature {
   color: #4f8a8b;
   font-size: 20px;
   font-weight: 300;
  
-}
-.col {
-  padding-left: 60px;
-}
-.days, .temperature {
+} */
+
+/* .days, .temperature {
   margin-top: 40px;
   margin-bottom: 10px;
-}
+} */

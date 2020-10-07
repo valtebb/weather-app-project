@@ -27,6 +27,7 @@ function showCurrentTemperature(response){
   let icon = document.querySelector('#icon');
   icon.setAttribute("src", `img/${response.data.weather[0].icon}.png`)
   // icon.setAttribute( 'src',`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+
 };
 
 function search(city){

@@ -73,7 +73,7 @@ function showForecast(response){
   let forecast = null;
 
   for (let i = 0; i < 6; i++){
-    forecast = response.data.list[0];
+    forecast = response.data.list[i];
     forecastElement.innerHTML += `
       <div col-2 class="forecast">
         <h3>${formatHours(forecast.dt * 1000)}</h3>
@@ -104,3 +104,17 @@ function searchLocation(event){
 
 let form = document.querySelector('#weather-search');
 form.addEventListener('submit', searchLocation);
+
+// Background image
+
+function backgroundImage(){
+  let bgImage = document.querySelector('#bg-image');
+  let date = new Date();
+  let hours = date.getHours();
+  if(hours < 12) {
+    bgImage.setAttribute("style", "background: url('/img/day_sm.png')" );
+  } else{
+    bgImage.setAttribute("style", "background: url('/img/night_sm.png')" );
+  }
+}
+backgroundImage();

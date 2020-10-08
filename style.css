@@ -52,6 +52,7 @@ form{
 }
 
 .container{
+  /* background: url('/img/day_sm.png'); */
   /* background: url(../img/day.svg);
  -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -95,14 +96,4 @@ form{
 .forecast {
   padding: 15px;
 }
-/* .days, .weather-view, .temperature {
-  color: #4f8a8b;
-  font-size: 20px;
-  font-weight: 300;
- 
-} */
 
-/* .days, .temperature {
-  margin-top: 40px;
-  margin-bottom: 10px;
-} */

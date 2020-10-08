@@ -60,6 +60,7 @@ form{
   max-width: 600px;
 }
 .search-input{
+
   border: 1px solid #4f8a8b;;
   border-radius: 6px;
   font-size: 18px;
@@ -82,17 +83,17 @@ form{
   background: #4f8a8b;
 	color: #ffffff;
 }
-.weather-forcast {
-  padding-left: 70px;
+.weather-forecast {
+  padding-left: 80px;
 }
-.forcast-temp{
+.forecast-temp{
   color: #4f8a8b;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.forcast {
-  padding: 10px;
+.forecast {
+  padding: 15px;
 }
 /* .days, .weather-view, .temperature {
   color: #4f8a8b;

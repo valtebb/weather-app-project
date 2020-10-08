@@ -38,10 +38,13 @@ form{
   margin-top: 10px;
   text-transform: capitalize;
 }
-
+.weather-info{
+  margin-top: 40px;
+}
 .location {
-  padding-left: 90px;
-  margin-top: 15px;
+  padding-left: 95px;
+  margin-top: 20px;
+
 }
 .icons {
   height: 50px;
@@ -52,14 +55,9 @@ form{
 }
 
 .container{
-  /* background: url('/img/day_sm.png'); */
-  /* background: url(../img/day.svg);
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  */
   max-width: 600px;
 }
+
 .search-input{
 
   border: 1px solid #4f8a8b;;

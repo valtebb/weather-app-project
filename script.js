@@ -48,6 +48,8 @@ function showCurrentTemperature(response){
   let icon = document.querySelector('#icon');
   icon.setAttribute("src", `img/${response.data.weather[0].icon}.png`)
   
+  celsiusTemp = Math.round(response.data.main.temp);
+  
 
 };
 function formatHours(timestamp){
@@ -102,11 +104,31 @@ function searchLocation(event){
   search(serchCityinput.value);
 }
 
-search("London");
+function showFahrenheitTemperature(event){
+  event.preventDefault();
+  let tempElement = document.querySelector('#current-temperature');
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function showCelsiusTemperature(event){
+  event.preventDefault();
+  let tempElement = document.querySelector('#current-temperature');
+  tempElement.innerHTML = celsiusTemp;
+}
+
+let celsiusTemp = null;
 
 let form = document.querySelector('#weather-search');
 form.addEventListener('submit', searchLocation);
 
+let fahrenheit = document.querySelector('#fahrenheit');
+fahrenheit.addEventListener('click', showFahrenheitTemperature);
+
+let celsius = document.querySelector('#celsius');
+celsius.addEventListener('click', showCelsiusTemperature);
+
+  search("London");
 // Background image
 
 function backgroundImage(){
@@ -120,6 +142,4 @@ function backgroundImage(){
   }
 }
 backgroundImage();
-
-
 

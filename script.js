@@ -135,10 +135,10 @@ function backgroundImage(){
   let bgImage = document.querySelector('#bg-image');
   let date = new Date();
   let hours = date.getHours();
-  if(hours > 12) {
-    bgImage.setAttribute("style", "background: url('/img/day_sm.png')" );
-  } else{
-    bgImage.setAttribute("style", "background: url('/img/night_sm.png')" );
+  if (hours < 12) {
+    bgImage.setAttribute("style", "background: url('img/day_sm.png')");
+  } else {
+    bgImage.setAttribute("style", "background: url('img/night_sm.png')");
   }
 }
 backgroundImage();

@@ -135,7 +135,7 @@ function backgroundImage(){
   let bgImage = document.querySelector('#bg-image');
   let date = new Date();
   let hours = date.getHours();
-  if (hours < 12) {
+  if (hours > 7 && hours < 20) {
     bgImage.setAttribute("style", "background: url('img/day_sm.png')");
   } else {
     bgImage.setAttribute("style", "background: url('img/night_sm.png')");
